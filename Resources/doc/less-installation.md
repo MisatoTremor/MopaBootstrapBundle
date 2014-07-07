@@ -15,7 +15,7 @@ Installing nodejs and less css manually
  - npm: (node package manager) 
  
 ``` bash
-curl https://npmjs.org/install.sh | sh
+curl -L https://npmjs.org/install.sh | sh
 ```
 
  - less css:
@@ -32,7 +32,6 @@ assetic:
         less:
             node: /usr/bin/node
             node_paths: [/usr/lib/node_modules]
-            apply_to: "\.less$"
 ```
 
  - Yui CSS and CSS Embed are very nice and recommended.
