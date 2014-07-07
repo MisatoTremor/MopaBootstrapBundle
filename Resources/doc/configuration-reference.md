@@ -51,7 +51,7 @@ mopa_bootstrap:
                 wrapper_div:
                     class:            form-group
                 horizontal_wrapper_div:
-                    class:            col-lg-3 col-lg-offset-3
+                    class:            col-sm-3 col-sm-offset-3
             widget_add_btn:
                 attr:
                     class:                btn btn-default
