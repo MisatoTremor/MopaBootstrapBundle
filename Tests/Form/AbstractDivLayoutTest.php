@@ -179,9 +179,7 @@ abstract class AbstractDivLayoutTest extends FormIntegrationTestCase
      */
     protected function getEmbedFormExtension()
     {
-        return new EmbedFormExtension(array(
-            'embed_form' => true,
-        ));
+        return new EmbedFormExtension();
     }
 
     /**

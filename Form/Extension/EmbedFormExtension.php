@@ -53,6 +53,7 @@ class EmbedFormExtension extends AbstractTypeExtension
             )
         );
     }
+
     /**
      * {@inheritdoc}
      */
