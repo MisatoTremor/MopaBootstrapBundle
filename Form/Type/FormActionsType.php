@@ -11,11 +11,9 @@ use Symfony\Component\OptionsResolver\OptionsResolver;
 use Symfony\Component\OptionsResolver\OptionsResolverInterface;
 
 /**
- * Class FormActionsType
+ * Class FormActionsType.
  *
  * Adds support for form actions, printing buttons in a single line, and correctly offset.
- *
- * @package Braincrafted\Bundle\BootstrapBundle\Form\Type
  */
 class FormActionsType extends AbstractType
 {
@@ -30,12 +28,14 @@ class FormActionsType extends AbstractType
     }
 
     /**
-     * Adds a button
+     * Adds a button.
      *
      * @param FormBuilderInterface $builder
      * @param $name
      * @param $config
+     *
      * @throws \InvalidArgumentException
+     *
      * @return ButtonBuilder
      */
     protected function createButton($builder, $name, $config)

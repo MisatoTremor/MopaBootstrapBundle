@@ -79,8 +79,8 @@ class IconExtension extends \Twig_Extension
     /**
      * Renders the icon.
      *
-     * @param string  $icon
-     * @param boolean $inverted
+     * @param string $icon
+     * @param bool   $inverted
      *
      * @return Response
      */

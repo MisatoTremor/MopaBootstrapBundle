@@ -25,9 +25,9 @@ use Symfony\Component\Finder\Finder;
 class InstallFontCommand extends ContainerAwareCommand
 {
     public static $iconSetsPaths = array(
-        "glyphicons" => "fonts/bootstrap",
-        "fontawesome" => "fonts/fa",
-        "fontawesome4" => "fonts/fa4",
+        'glyphicons' => 'fonts/bootstrap',
+        'fontawesome' => 'fonts/fa',
+        'fontawesome4' => 'fonts/fa4',
     );
 
     /**
@@ -37,7 +37,7 @@ class InstallFontCommand extends ContainerAwareCommand
     {
         $this
             ->setName('mopa:bootstrap:install:font')
-            ->setDescription("Install font to web/fonts")
+            ->setDescription('Install font to web/fonts')
             ->setHelp(<<<EOT
 The <info>mopa:bootstrap:install:font</info> command install the font configured to used into web/fonts directory
 
@@ -56,7 +56,7 @@ EOT
 
         $webPath = $this->getContainer()->get('kernel')->getRootDir().DIRECTORY_SEPARATOR.'..'.DIRECTORY_SEPARATOR.'web';
 
-        $iconWebPath = $webPath.DIRECTORY_SEPARATOR."fonts";
+        $iconWebPath = $webPath.DIRECTORY_SEPARATOR.'fonts';
 
         $fs = new Filesystem();
 
@@ -72,7 +72,7 @@ EOT
 
         $bsbPath = $composer->getInstallationManager()->getInstallPath($sourcePackage);
 
-        $iconSetPath = $bsbPath.DIRECTORY_SEPARATOR."Resources".DIRECTORY_SEPARATOR."public".DIRECTORY_SEPARATOR.self::$iconSetsPaths[$iconSet];
+        $iconSetPath = $bsbPath.DIRECTORY_SEPARATOR.'Resources'.DIRECTORY_SEPARATOR.'public'.DIRECTORY_SEPARATOR.self::$iconSetsPaths[$iconSet];
 
         $finder->files()->in($iconSetPath);
 
@@ -80,7 +80,7 @@ EOT
             $fs->copy($file->getRealpath(), $iconWebPath.DIRECTORY_SEPARATOR.$file->getRelativePathname());
         }
 
-        $output->writeln("Font: ".$iconSet." Installed... <info>OK</info>");
+        $output->writeln('Font: '.$iconSet.' Installed... <info>OK</info>');
     }
 
     public static function installFonts()

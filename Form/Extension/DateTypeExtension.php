@@ -84,7 +84,7 @@ class DateTypeExtension extends AbstractTypeExtension
         }
 
         $resolver->setDefaults(array(
-            'date_wrapper_class' => $this->options['date_wrapper_class']
+            'date_wrapper_class' => $this->options['date_wrapper_class'],
         ));
     }
 

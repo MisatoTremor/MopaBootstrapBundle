@@ -18,7 +18,7 @@ use Symfony\Component\OptionsResolver\OptionsResolver;
 use Symfony\Component\OptionsResolver\OptionsResolverInterface;
 
 /**
- * Type for Tabs handling
+ * Type for Tabs handling.
  *
  * @author phiamo <phiamo@googlemail.com>
  */

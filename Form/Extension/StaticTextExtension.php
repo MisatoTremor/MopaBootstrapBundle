@@ -18,7 +18,7 @@ use Symfony\Component\OptionsResolver\OptionsResolver;
 use Symfony\Component\OptionsResolver\OptionsResolverInterface;
 
 /**
- * Extension for creating static text (form-control-static)
+ * Extension for creating static text (form-control-static).
  *
  * @author peshi <peshis@gmail.com>
  */

@@ -19,7 +19,7 @@ use Symfony\Component\OptionsResolver\OptionsResolver;
 use Symfony\Component\OptionsResolver\OptionsResolverInterface;
 
 /**
- * Extension for Help Forms handling
+ * Extension for Help Forms handling.
  *
  * @author phiamo <phiamo@googlemail.com>
  */

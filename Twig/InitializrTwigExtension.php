@@ -53,10 +53,10 @@ class InitializrTwigExtension extends \Twig_Extension
     public function getGlobals()
     {
         return array(
-            'dns_prefetch'      => $this->parameters['dns_prefetch'],
-            'meta'              => $this->parameters['meta'],
-            'google'            => $this->parameters['google'],
-            'diagnostic_mode'   => $this->parameters['diagnostic_mode'],
+            'dns_prefetch' => $this->parameters['dns_prefetch'],
+            'meta' => $this->parameters['meta'],
+            'google' => $this->parameters['google'],
+            'diagnostic_mode' => $this->parameters['diagnostic_mode'],
         );
     }
 

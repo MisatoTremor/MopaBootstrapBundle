@@ -115,7 +115,7 @@ class TabbedFormTypeExtension extends AbstractTypeExtension
                     'translation_domain' => $child->vars['translation_domain'],
                 );
 
-                $tabIndex++;
+                ++$tabIndex;
             }
         }
 

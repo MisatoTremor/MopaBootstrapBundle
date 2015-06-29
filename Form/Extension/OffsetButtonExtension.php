@@ -18,7 +18,7 @@ use Symfony\Component\OptionsResolver\OptionsResolver;
 use Symfony\Component\OptionsResolver\OptionsResolverInterface;
 
 /**
- * Extension for Offsetting a button
+ * Extension for Offsetting a button.
  *
  * @author peshi <peshis@gmail.com>
  */
